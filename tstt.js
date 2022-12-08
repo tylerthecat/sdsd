@@ -9,7 +9,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'static')));
 // Port website will run o
 app.set('view engine', 'ejs');
-app.listen(PORT,function(){
+app.listen(8080,function(){
     console.log('Server start: http://localhost:8080/')
 });
 app.get('/', function (req, res) {
@@ -18,9 +18,7 @@ app.get('/', function (req, res) {
 
 app.get('/lll',(req,res)=>{
     res.sendFile(`${__dirname}/app.js`);
-})
-app.post('/lll',(req,res)=>{
-    res.sendFile(`${__dirname}/app.js`);
+    console.log(req)
 })
 
 app.get('/login', (req, res) => {
