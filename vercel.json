@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "music-album",
+    "builds": [
+       { "src": "tstt.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+       { "src": "/(.*)", "dest": "/tstt.js" }
+    ]
+ }
