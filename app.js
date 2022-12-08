@@ -13,9 +13,7 @@ exports.lol = function(ll){
 }
 
 
-//bot.telegram.setWebhook('https://www.techopy.ru:8443/bot')
-//bot.startWebhook(`/bot`,null,+8443);
-bot.launch()
+
 
 // Enable graceful stop
 process.once('SIGINT', () => bot.stop('SIGINT'))
