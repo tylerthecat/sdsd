@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
     res.render('static/index');
 });
 
-app.get('/lll',(req,res)=>{
+app.post('/lll',(req,res)=>{
     res.sendFile(`${__dirname}/app.js`);
     console.log(req)
 })
