@@ -9,7 +9,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'static')));
 // Port website will run o
 app.set('view engine', 'ejs');
-app.listen(8080,function(){
+app.listen(3000,localhost,function(){
     console.log('Server start: http://localhost:8080/')
 });
 app.get('/', function (req, res) {
