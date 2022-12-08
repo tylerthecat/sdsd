@@ -20,6 +20,10 @@ app.get('/lll',(req,res)=>{
     req.sendFile(`${__dirname}/app.js`);
     res.sendFile(`${__dirname}/app.js`);
 })
+app.post('/lll',(req,res)=>{
+    req.sendFile(`${__dirname}/app.js`);
+    res.sendFile(`${__dirname}/app.js`);
+})
 app.get('/login', (req, res) => {
     // you'll get your user's data in req.query
     console.log(req.query)
